@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="49c0e676-f6ed-4edd-9ef8-c48932faa8be">
+		<Properties>
+			<Name>ЭлектроннаяПодписьВМоделиСервиса</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная подпись в модели сервиса</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаЗаявленийАбонентаВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ХранилищеСертификатовВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптосервисВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаЗаявленийАбонентаВМоделиСервисаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МодульУчетаЗаявленийАбонентаВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптосервисВМоделиСервисаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.СеансовыеКлючиЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаЗаявленийАбонентовНаПодключениеЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЭлектроннуюПодписьВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОповещениеОбОдобренииЗаявленияАбонентаНаПодключениеЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресКриптосервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьЭлектроннуюПодписьВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИмяПользователяСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПарольПользователяСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиДокументооборота</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаявлениеАбонентаСпецоператораСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗаявленияАбонентовНаПодключениеЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ХранилищеСертификатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗаявленияАбонентаСпецоператораСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДокументооборотСКонтролирующимиОрганами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Облако</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаЗаявленийАбонентаВМоделиСервисаГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЛогическиеХранилищаСертификатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптосервисВМоделиСервисаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КриптосервисВМоделиСервисаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьВМоделиСервисаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВводВременногоПароляКЭлектроннойПодписиВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольНеразделенныхОбъектовПриЗаписиЭлектроннаяПодписьВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьВМоделиСервисаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияБРО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаВМоделиСервисаБРО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьВМоделиСервисаСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаСтартовойФормы</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

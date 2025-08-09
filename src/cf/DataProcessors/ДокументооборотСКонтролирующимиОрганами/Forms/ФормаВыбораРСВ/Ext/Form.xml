@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор расчета по страховым взносам</v8:content>
+		</v8:item>
+	</Title>
+	<Width>70</Width>
+	<Height>27</Height>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КнопкаУдалитьПривязку" id="22">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаУдалитьПривязку</CommandName>
+				<ExtendedTooltip name="КнопкаУдалитьПривязкуРасширеннаяПодсказка" id="28"/>
+			</Button>
+			<Button name="КнопкаПродолжить" id="12">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаПродолжить</CommandName>
+				<ExtendedTooltip name="КнопкаПродолжитьРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="КнопкаОтмена" id="13">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаОтмена</CommandName>
+				<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="30"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="1">
+			<TextColor>#000080</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В соответствии с требованиями Пенсионного фонда Российской Федерации представление файлов отчетности в электронной форме по страховым взносам и персонифицированному учету с 1 апреля 2011 года, включая отчетность за первый квартал 2011 года, в обязательном порядке осуществляется одновременно и одним отправлением.
+
+Выберите соответствующий расчет по страховым взносам, который будет отправлен вместе с отчетностью по персонифицированному отчету.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="31"/>
+		</LabelDecoration>
+		<Table name="ЖурналОтчетов" id="3">
+			<ReadOnly>true</ReadOnly>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ЖурналОтчетов</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЖурналОтчетовКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ЖурналОтчетовКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="КнопкаОткрыть" id="27">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаОткрыть</CommandName>
+						<ExtendedTooltip name="КнопкаОткрытьРасширеннаяПодсказка" id="32"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЖурналОтчетовРасширеннаяПодсказка" id="33"/>
+			<SearchStringAddition name="ЖурналОтчетовСтрокаПоиска" id="48">
+				<AdditionSource>
+					<Item>ЖурналОтчетов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналОтчетовСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ЖурналОтчетовСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЖурналОтчетовСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>ЖурналОтчетов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналОтчетовСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ЖурналОтчетовСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЖурналОтчетовУправлениеПоиском" id="54">
+				<AdditionSource>
+					<Item>ЖурналОтчетов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЖурналОтчетовУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ЖурналОтчетовУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeDeleteRow">ЖурналОтчетовПередУдалением</Event>
+				<Event name="OnActivateRow">ЖурналОтчетовПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ИндексКартинки" id="23">
+					<DataPath>ЖурналОтчетов.ИндексКартинки</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.СтатусыРегламентированныхОтчетов</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ИндексКартинкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ИндексКартинкиРасширеннаяПодсказка" id="43"/>
+				</PictureField>
+				<InputField name="НаименованиеОтчета" id="16">
+					<DataPath>ЖурналОтчетов.РегламентированныйОтчет.НаименованиеОтчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>18</Width>
+					<ContextMenu name="НаименованиеОтчетаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НаименованиеОтчетаРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<InputField name="ПредставлениеПериода" id="25">
+					<DataPath>ЖурналОтчетов.ПредставлениеПериода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>12</Width>
+					<ContextMenu name="ПредставлениеПериодаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПредставлениеПериодаРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="Комментарий" id="20">
+					<DataPath>ЖурналОтчетов.РегламентированныйОтчет.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>22</Width>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="Ссылка" id="14">
+					<DataPath>ЖурналОтчетов.РегламентированныйОтчет.Ref</DataPath>
+					<Visible>false</Visible>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="47"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ДокументооборотСКонтролирующимиОрганами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЖурналОтчетов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Журнал отчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РегламентированныйОтчет" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентированный отчет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.РегламентированныйОтчет</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеПериода" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПродолжить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПродолжить</Action>
+		</Command>
+		<Command name="КомандаОтмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтмена</Action>
+		</Command>
+		<Command name="КомандаУдалитьПривязку" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить привязку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить привязку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаУдалитьПривязку</Action>
+		</Command>
+		<Command name="КомандаОткрыть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldOpen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОткрыть</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДатаНачалаПериода">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ДатаОкончанияПериода">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Организация">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="НачальноеЗначениеВыбора">
+			<Type>
+				<v8:Type>cfg:DocumentRef.РегламентированныйОтчет</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

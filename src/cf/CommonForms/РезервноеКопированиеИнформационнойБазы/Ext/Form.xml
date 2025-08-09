@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРезервноеКопированиеИВосстановление" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование и восстановление</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРезервноеКопированиеИВосстановлениеРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРезервноеКопирование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа резервное копирование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа резервное копирование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРезервноеКопированиеРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="6"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРезервноеКопированиеПрограммы" id="7">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРезервноеКопированиеПрограммыExtendedTooltip" id="8"/>
+									<ChildItems>
+										<LabelDecoration name="СозданиеРезервнойКопии" id="9">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание резервной копии</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="СозданиеРезервнойКопииКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="СозданиеРезервнойКопииРасширеннаяПодсказка" id="11"/>
+											<Events>
+												<Event name="Click">РезервноеКопированиеПрограммыНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="НадписьДатаПроведенияПоследнегоРезервногоКопирования" id="51">
+											<Width>55</Width>
+											<Height>2</Height>
+											<TextColor>style:ToolTipTextColor</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В последний раз резервное копирование проводилось: 25 октября 2014 г 20:14:12</v8:content>
+												</v8:item>
+											</Title>
+											<VerticalAlign>Top</VerticalAlign>
+											<ContextMenu name="НадписьДатаПроведенияПоследнегоРезервногоКопированияКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="НадписьДатаПроведенияПоследнегоРезервногоКопированияExtendedTooltip" id="53"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВосстановлениеРезервнойКопии" id="15">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВосстановлениеРезервнойКопииExtendedTooltip" id="16"/>
+									<ChildItems>
+										<LabelDecoration name="ВосстановлениеИзРезервнойКопии" id="17">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Восстановление данных из резервной копии</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ВосстановлениеИзРезервнойКопииКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ВосстановлениеИзРезервнойКопииExtendedTooltip" id="19"/>
+											<Events>
+												<Event name="Click">ВосстановлениеИзРезервнойКопииНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкаРезервногоКопирования" id="23">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаРезервногоКопированияExtendedTooltip" id="24"/>
+							<ChildItems>
+								<LabelDecoration name="НастройкаРезервногоКопирования" id="25">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка резервного копирования</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НастройкаРезервногоКопированияКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="НастройкаРезервногоКопированияExtendedTooltip" id="27"/>
+									<Events>
+										<Event name="Click">НастройкаРезервногоКопированияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ПояснениеНастройкаРезервногоКопирования" id="28">
+									<Height>2</Height>
+									<TextColor>style:ToolTipTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка параметров резервного копирования.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеНастройкаРезервногоКопированияКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ПояснениеНастройкаРезервногоКопированияExtendedTooltip" id="30"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВосстановлениеРезервнойКопииВМоделиСервиса" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление резервной копии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление резервной копии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>StrongSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВосстановлениеРезервнойКопииВМоделиСервисаExtendedTooltip" id="32"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация18" id="33">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Picture>
+								<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="Декорация18КонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="Декорация18ExtendedTooltip" id="35"/>
+						</PictureDecoration>
+						<LabelDecoration name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервиса" id="36">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для восстановления приложения из ранее созданной резервной копии необходимо перейти в Менеджер сервиса и выполнить комады Настройка -&gt; Резервные копии приложений</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервисаКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервисаExtendedTooltip" id="38"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРезервноеКопированиеНеДоступно" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование (недоступно)</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРезервноеКопированиеНеДоступноРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация19" id="45">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Picture>
+						<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="Декорация19КонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="47"/>
+				</PictureDecoration>
+				<LabelDecoration name="ПояснениеРезервноеКопированиеНеДоступно" id="48">
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В клиент-серверном варианте работы резервное копирование выполняется средствами СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеРезервноеКопированиеНеДоступноКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ПояснениеРезервноеКопированиеНеДоступноРасширеннаяПодсказка" id="50"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РежимРаботы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы (фиксированная структура)</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+		</Attribute>
+	</Attributes>
+</Form>

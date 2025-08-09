@@ -1,0 +1,1134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="141"/>
+			<ChildItems>
+				<UsualGroup name="ШапкаЛеваяКолонка" id="142">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка (левая колонка)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка левая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаЛеваяКолонкаРасширеннаяПодсказка" id="143"/>
+					<ChildItems>
+						<LabelDecoration name="ЗаголовокПериод" id="146">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка действует с:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗаголовокПериодКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="ЗаголовокПериодРасширеннаяПодсказка" id="148"/>
+						</LabelDecoration>
+						<LabelField name="ЗаголовокОрганизация" id="149">
+							<DataPath>ЗаголовокОрганизация</DataPath>
+							<ContextMenu name="ЗаголовокОрганизацияКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="ЗаголовокОрганизацияРасширеннаяПодсказка" id="151"/>
+						</LabelField>
+						<LabelDecoration name="ЗаголовокОсновноеСредство" id="152">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основное средство:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗаголовокОсновноеСредствоКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="ЗаголовокОсновноеСредствоРасширеннаяПодсказка" id="154"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ШапкаПраваяКолонка" id="144">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка (правая колонка)</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шапка правая колонка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ШапкаПраваяКолонкаРасширеннаяПодсказка" id="145"/>
+					<ChildItems>
+						<InputField name="Период" id="1">
+							<DataPath>Запись.Period</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПериодExtendedTooltip" id="63"/>
+							<Events>
+								<Event name="OnChange">ПериодПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Организация" id="3">
+							<DataPath>Запись.Организация</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="62"/>
+							<Events>
+								<Event name="OnChange">ОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ОсновноеСредство" id="5">
+							<DataPath>Запись.ОсновноеСредство</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ОсновноеСредствоКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ОсновноеСредствоExtendedTooltip" id="64"/>
+							<Events>
+								<Event name="OnChange">ОсновноеСредствоПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="НеПодлежитНалогообложению" id="155">
+							<DataPath>НеПодлежитНалогообложению</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеПодлежитНалогообложениюКонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="НеПодлежитНалогообложениюРасширеннаяПодсказка" id="157"/>
+							<Events>
+								<Event name="OnChange">НеПодлежитНалогообложениюПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницыПараметрыРегистрации" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры регистрации (страницы)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы параметры регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыПараметрыРегистрацииРасширеннаяПодсказка" id="97"/>
+			<ChildItems>
+				<Page name="ГруппаОбъектНедвижимогоИмущества" id="98">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект недвижимого имущества</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОбъектНедвижимогоИмуществаРасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<RadioButtonField name="НалоговаяБаза" id="120">
+							<DataPath>Запись.НалоговаяБаза</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Среднегодовая стоимость (по данным бухгалтерского учета)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.НалоговаяБазаПоНалогуНаИмущество.EnumValue.СреднегодоваяСтоимость</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Кадастровая стоимость</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.НалоговаяБазаПоНалогуНаИмущество.EnumValue.КадастроваяСтоимость</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="НалоговаяБазаКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="НалоговаяБазаРасширеннаяПодсказка" id="122"/>
+							<Events>
+								<Event name="OnChange">НалоговаяБазаПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<InputField name="КадастровыйНомер" id="134">
+							<DataPath>Запись.КадастровыйНомер</DataPath>
+							<ContextMenu name="КадастровыйНомерКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="КадастровыйНомерРасширеннаяПодсказка" id="136"/>
+						</InputField>
+						<InputField name="КадастровыйНомерПомещения" id="137">
+							<DataPath>Запись.КадастровыйНомерПомещения</DataPath>
+							<ContextMenu name="КадастровыйНомерПомещенияКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="КадастровыйНомерПомещенияРасширеннаяПодсказка" id="139"/>
+						</InputField>
+						<InputField name="КадастроваяСтоимость" id="114">
+							<DataPath>Запись.КадастроваяСтоимость</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="КадастроваяСтоимостьКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="КадастроваяСтоимостьРасширеннаяПодсказка" id="116"/>
+						</InputField>
+						<InputField name="НеоблагаемаяКадастроваяСтоимость" id="128">
+							<DataPath>Запись.НеоблагаемаяКадастроваяСтоимость</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ChoiceButton>false</ChoiceButton>
+							<ContextMenu name="НеоблагаемаяКадастроваяСтоимостьКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="НеоблагаемаяКадастроваяСтоимостьРасширеннаяПодсказка" id="130"/>
+							<Events>
+								<Event name="OnChange">НеоблагаемаяКадастроваяСтоимостьПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаРегистрацииПраваСобственности" id="166">
+							<DataPath>Запись.ДатаРегистрацииПраваСобственности</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ДатаРегистрацииПраваСобственностиКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="ДатаРегистрацииПраваСобственностиРасширеннаяПодсказка" id="168">
+								<Height>3</Height>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Используется для заполнения &lt;b&gt;Коэффициента К&lt;/&gt;
+в Разделе 3 Декларации по налогу на имущество
+(Авансового расчета по налогу на имущество)</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ДатаРегистрацииПраваСобственностиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ДатаПрекращенияПраваСобственности" id="169">
+							<DataPath>Запись.ДатаПрекращенияПраваСобственности</DataPath>
+							<ContextMenu name="ДатаПрекращенияПраваСобственностиКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="ДатаПрекращенияПраваСобственностиРасширеннаяПодсказка" id="171"/>
+							<Events>
+								<Event name="OnChange">ДатаПрекращенияПраваСобственностиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="ИспользуетсяТолькоВДеятельностиОблагаемойЕНВД" id="172">
+							<DataPath>Запись.ИспользуетсяТолькоВДеятельностиОблагаемойЕНВД</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользуетсяТолькоВДеятельностиОблагаемойЕНВДКонтекстноеМеню" id="173"/>
+							<ExtendedTooltip name="ИспользуетсяТолькоВДеятельностиОблагаемойЕНВДРасширеннаяПодсказка" id="174"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаДоляСтоимости" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доля стоимости</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДоляСтоимостиExtendedTooltip" id="87"/>
+							<ChildItems>
+								<RadioButtonField name="ДоляУказана" id="57">
+									<DataPath>ДоляУказана</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доля стоимости</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В полной сумме</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В доле:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ДоляУказанаКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ДоляУказанаExtendedTooltip" id="88"/>
+									<Events>
+										<Event name="OnChange">ДоляУказанаПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаСамаДоляСтоимости" id="175">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа сама доля стоимости</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСамаДоляСтоимостиРасширеннаяПодсказка" id="176"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация1" id="177">
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="178"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="179"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация2" id="180">
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="181"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="182"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаРасположенВРазныхСубъектахФедерации" id="46">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расположен в разных субъектах федерации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расположен в разных субъектах федерации</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРасположенВРазныхСубъектахФедерацииExtendedTooltip" id="89"/>
+											<ChildItems>
+												<InputField name="ДоляСтоимостиЧислитель" id="25">
+													<DataPath>Запись.ДоляСтоимостиЧислитель</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ДоляСтоимостиЧислительКонтекстноеМеню" id="26"/>
+													<ExtendedTooltip name="ДоляСтоимостиЧислительExtendedTooltip" id="90"/>
+													<Events>
+														<Event name="OnChange">ДоляСтоимостиЧислительПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ДекорацияДеление" id="47">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>/</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияДелениеКонтекстноеМеню" id="48"/>
+													<ExtendedTooltip name="ДекорацияДелениеExtendedTooltip" id="91"/>
+												</LabelDecoration>
+												<InputField name="ДоляСтоимостиЗнаменатель" id="27">
+													<DataPath>Запись.ДоляСтоимостиЗнаменатель</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalAlign>Left</HorizontalAlign>
+													<ContextMenu name="ДоляСтоимостиЗнаменательКонтекстноеМеню" id="28"/>
+													<ExtendedTooltip name="ДоляСтоимостиЗнаменательExtendedTooltip" id="92"/>
+													<Events>
+														<Event name="OnChange">ДоляСтоимостиЗнаменательПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНалоговыйОрган" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговый орган</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налоговый орган</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНалоговыйОрганРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПостановкаНаУчет" id="31">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Постановка на учет в налоговом органе:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Постановка на учет в налоговом органе</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПостановкаНаУчетExtendedTooltip" id="65"/>
+							<ChildItems>
+								<RadioButtonField name="ПостановкаНаУчетВНалоговомОргане" id="9">
+									<DataPath>Запись.ПостановкаНаУчетВНалоговомОргане</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По месту нахождения организации</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПостановкаНаУчетВНалоговомОргане.EnumValue.ПоМестуНахожденияОрганизации</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>С другим кодом по ОКТМО:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПостановкаНаУчетВНалоговомОргане.EnumValue.СДругимКодомПоОКАТО</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В другом налоговом органе:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПостановкаНаУчетВНалоговомОргане.EnumValue.ВДругомНалоговомОргане</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПостановкаНаУчетВНалоговомОрганеКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ПостановкаНаУчетВНалоговомОрганеExtendedTooltip" id="66"/>
+									<Events>
+										<Event name="OnChange">ПостановкаНаУчетВНалоговомОрганеПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаДанныеДляПостановкиНаУчет" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные для постановки на учет</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные для постановки на учет</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДанныеДляПостановкиНаУчетExtendedTooltip" id="67"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияПустая001" id="33">
+											<ContextMenu name="ДекорацияПустая001КонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="ДекорацияПустая001ExtendedTooltip" id="68"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаДругойКодТерритории" id="102">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Другой код территории</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДругойКодТерриторииРасширеннаяПодсказка" id="103"/>
+											<ChildItems>
+												<InputField name="КодПоОКТМО_ДругойКод" id="104">
+													<DataPath>КодПоОКТМО_ДругойКод</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Mask>99999999999</Mask>
+													<ContextMenu name="КодПоОКТМО_ДругойКодКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="КодПоОКТМО_ДругойКодРасширеннаяПодсказка" id="106"/>
+												</InputField>
+												<InputField name="КодПоОКАТО_ДругойКод" id="7">
+													<DataPath>КодПоОКАТО_ДругойКод</DataPath>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Mask>99999999999</Mask>
+													<ContextMenu name="КодПоОКАТО_ДругойКодКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="КодПоОКАТО_ДругойКодExtendedTooltip" id="69"/>
+													<Events>
+														<Event name="OnChange">КодПоОКАТО_ДругойКодПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="НалоговыйОрган" id="11">
+											<DataPath>Запись.НалоговыйОрган</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>38</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">ГоловнаяОрганизация</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="НалоговыйОрганКонтекстноеМеню" id="12"/>
+											<ExtendedTooltip name="НалоговыйОрганExtendedTooltip" id="71"/>
+											<Events>
+												<Event name="OnChange">НалоговыйОрганПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаДругаяИФНС" id="37">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа другая ИФНС</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Другая ИФНС</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДругаяИФНСExtendedTooltip" id="70"/>
+											<ChildItems>
+												<InputField name="КодПоОКТМО_ДругойНалоговыйОрган" id="107">
+													<DataPath>КодПоОКТМО_ДругойНалоговыйОрган</DataPath>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Mask>99999999999</Mask>
+													<ContextMenu name="КодПоОКТМО_ДругойНалоговыйОрганКонтекстноеМеню" id="108"/>
+													<ExtendedTooltip name="КодПоОКТМО_ДругойНалоговыйОрганРасширеннаяПодсказка" id="109"/>
+												</InputField>
+												<InputField name="КодПоОКАТО_ДругойНалоговыйОрган" id="35">
+													<DataPath>КодПоОКАТО_ДругойНалоговыйОрган</DataPath>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Mask>99999999999</Mask>
+													<ContextMenu name="КодПоОКАТО_ДругойНалоговыйОрганКонтекстноеМеню" id="36"/>
+													<ExtendedTooltip name="КодПоОКАТО_ДругойНалоговыйОрганExtendedTooltip" id="72"/>
+													<Events>
+														<Event name="OnChange">КодПоОКАТО_ДругойНалоговыйОрганПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНалог" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Налог на имущество</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаНалогРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНалогНаИмущество" id="38">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налог на имущество</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налог на имущество</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНалогНаИмуществоExtendedTooltip" id="73"/>
+							<ChildItems>
+								<InputField name="НалоговаяСтавка" id="15">
+									<DataPath>Запись.НалоговаяСтавка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Налоговая ставка в субъекте Российской Федерации</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceButton>false</ChoiceButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="НалоговаяСтавкаКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="НалоговаяСтавкаExtendedTooltip" id="74"/>
+									<Events>
+										<Event name="OnChange">НалоговаяСтавкаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ДекорацияНалоговаяСтавкаПроцент" id="39">
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>%</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияНалоговаяСтавкаПроцентКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДекорацияНалоговаяСтавкаПроцентExtendedTooltip" id="75"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНалоговыеЛьготы" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоговая льгота:</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоговые льготы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаНалоговыеЛьготыExtendedTooltip" id="76"/>
+							<ChildItems>
+								<RadioButtonField name="ПорядокНалогообложения" id="123">
+									<DataPath>Запись.ПорядокНалогообложения</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ColumnsCount>1</ColumnsCount>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Особые льготы не установлены</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокНалогообложенияИмущества.EnumValue.ОсобыеЛьготыНеУстановлены</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Освобождается от налогообложения, код льготы:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокНалогообложенияИмущества.EnumValue.ОсвобождаетсяОтНалогообложения</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Облагается по сниженной ставке:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ПорядокНалогообложенияИмущества.EnumValue.ОблагаетсяПоСниженнойСтавке</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПорядокНалогообложенияКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="ПорядокНалогообложенияExtendedTooltip" id="125"/>
+									<Events>
+										<Event name="OnChange">ПорядокНалогообложенияПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<UsualGroup name="ГруппаДанныеПоЛьготам" id="42">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные по льготам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Данные по льготам</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДанныеПоЛьготамExtendedTooltip" id="78"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияПустая002" id="43">
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДекорацияПустая002КонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ДекорацияПустая002ExtendedTooltip" id="79"/>
+										</LabelDecoration>
+										<InputField name="КодНалоговойЛьготыОсвобождениеОтНалогообложения" id="17">
+											<DataPath>Запись.КодНалоговойЛьготыОсвобождениеОтНалогообложения</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="КодНалоговойЛьготыОсвобождениеОтНалогообложенияКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="КодНалоговойЛьготыОсвобождениеОтНалогообложенияExtendedTooltip" id="80"/>
+											<Events>
+												<Event name="OnChange">КодНалоговойЛьготыОсвобождениеОтНалогообложенияПриИзменении</Event>
+												<Event name="StartChoice">КодНалоговойЛьготыОсвобождениеОтНалогообложенияНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаСниженнаяНалоговаяСтавка" id="52">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сниженная налоговая ставка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>СниженнаяНалоговаяСтавка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСниженнаяНалоговаяСтавкаExtendedTooltip" id="81"/>
+											<ChildItems>
+												<InputField name="СниженнаяНалоговаяСтавка" id="19">
+													<DataPath>Запись.СниженнаяНалоговаяСтавка</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ChoiceButton>false</ChoiceButton>
+													<ContextMenu name="СниженнаяНалоговаяСтавкаКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="СниженнаяНалоговаяСтавкаExtendedTooltip" id="82"/>
+													<Events>
+														<Event name="OnChange">СниженнаяНалоговаяСтавкаПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ДекорацияСниженнаяНалоговаяСтавкаПроцент" id="53">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>%</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСниженнаяНалоговаяСтавкаПроцентКонтекстноеМеню" id="54"/>
+													<ExtendedTooltip name="ДекорацияСниженнаяНалоговаяСтавкаПроцентExtendedTooltip" id="83"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДвижимоеИмущество" id="185">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Движимое имущество</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа движимое имущество</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДвижимоеИмуществоРасширеннаяПодсказка" id="186"/>
+							<ChildItems>
+								<CheckBoxField name="ДвижимоеИмуществоПодлежащееНалогообложению" id="187">
+									<DataPath>Запись.ДвижимоеИмуществоПодлежащееНалогообложению</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДвижимоеИмуществоПодлежащееНалогообложениюКонтекстноеМеню" id="188"/>
+									<ExtendedTooltip name="ДвижимоеИмуществоПодлежащееНалогообложениюРасширеннаяПодсказка" id="189">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Движимое имущество, принятое на учет с 1 января 2013 года в результате:
+- реорганизации или ликвидации юридических лиц;
+- передачи, включая приобретение, имущества между лицами, признаваемыми взаимозависимыми;
+</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОсобенности" id="158">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Особенности</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа особенности</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОсобенностиРасширеннаяПодсказка" id="159"/>
+					<ChildItems>
+						<RadioButtonField name="ВидИмущества" id="160">
+							<DataPath>Запись.ВидИмущества</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>     Объект приобретен или создан при реализации инвестиционного проекта для Особой
+     экономической зоны в Калининградской области</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Особенности отсутствуют</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыИмущества.EnumValue.ОсобенностиОтсутствуют</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Входит в состав единой системы газоснабжения (ЕСГС)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыИмущества.EnumValue.ВходитВСоставЕСГС</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Используется в Особой экономической зоне в Калининградской области</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыИмущества.EnumValue.ИспользуетсяВОЭЗКалининградскойОбласти</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ВидИмуществаКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ВидИмуществаРасширеннаяПодсказка" id="162"/>
+						</RadioButtonField>
+						<RadioButtonField name="ВидИмуществаНаходитсяНаТерриторииДругогоГосударства" id="163">
+							<DataPath>Запись.ВидИмущества</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Находится на территории другого государства</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xr:DesignTimeRef">Enum.ВидыИмущества.EnumValue.НаходитсяНаТерриторииДругогоГосударства</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ВидИмуществаНаходитсяНаТерриторииДругогоГосударстваКонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="ВидИмуществаНаходитсяНаТерриторииДругогоГосударстваExtendedTooltip" id="165"/>
+						</RadioButtonField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="29">
+			<DataPath>Запись.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="95"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.СтавкиНалогаНаИмуществоПоОтдельнымОсновнымСредствам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Запись.УдалитьВходитВСоставЕСГС</Field>
+				<Field>Запись.УдалитьРасположенВРазныхСубъектахФедерации</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КодПоОКАТО_ДругойКод" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКАТО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодПоОКАТО_ДругойНалоговыйОрган" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКАТО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодПоОКАТО_Исходный" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКАТО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Особенности" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Особенности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоляУказана" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доля указана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодПоОКТМО_Исходный" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКТМО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодПоОКТМО_ДругойКод" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКТМО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодПоОКТМО_ДругойНалоговыйОрган" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код по ОКТМО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>11</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ЗаголовокОрганизация" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>1</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="НеПодлежитНалогообложению" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не подлежит налогообложению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбъектНедвижимогоИмущества" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект недвижимого имущества</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГоловнаяОрганизация" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Головная организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СовмещениеОСНОиЕНВД" id="15">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

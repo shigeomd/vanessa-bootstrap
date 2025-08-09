@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ИОНОнлайнМосква" id="10">
+			<TextColor>style:ЦветГиперссылкиБРО</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИОН-online Москва</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://213.24.62.114:443</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Hyperlink>true</Hyperlink>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<ContextMenu name="ИОНОнлайнМоскваКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИОНОнлайнМоскваРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="Click">ИОНОнлайнМоскваНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="ИОНОнлайнМосковскаяОбласть" id="13">
+			<TextColor>style:ЦветГиперссылкиБРО</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИОН-online Московская область</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>http://213.24.62.98:444</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Hyperlink>true</Hyperlink>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<ContextMenu name="ИОНОнлайнМосковскаяОбластьКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ИОНОнлайнМосковскаяОбластьРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="Click">ИОНОнлайнМосковскаяОбластьНажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Пояснение" id="7">
+			<Height>40</Height>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Некоторые ИФНС предоставляют возможность получения информации о взаиморасчетах с организацией в режиме онлайн. Этот сервис можно рассматривать в качестве альтернативы возможностям сверки, доступным в 1С-Отчетность. При использовании сервиса ИОН-online налогоплательщик получает требуемый документ в течение нескольких минут с момента отправки запроса.
+
+&lt;b&gt;Сервис ИОН-online &lt;/&gt;&lt;b&gt;разработан и поддерживается &lt;/&gt;&lt;b&gt;ФНС &lt;/&gt;&lt;b&gt;только для налого&lt;/&gt;&lt;b&gt;плательщиков&lt;/&gt;&lt;b&gt; Москвы и Московской области&lt;/&gt;&lt;b&gt;. В &lt;/&gt;&lt;b&gt;случае технических неполадок в работе сервиса следует обращаться&lt;/&gt;&lt;b&gt; в соответствующее управление ФНС. &lt;/&gt;
+
+Сервис ИОН-online позволяет получить следующие документы:
+- акт сверки расчетов налогоплательщика по налогам, сборам и взносам
+- выписка операций из карточки "Расчеты с бюджетом"
+- перечень бухгалтерской и налоговой отчетности, представленной в отчетном году
+- справка о состоянии расчетов по налогам, сборам и взносам (информация о наличии или отсутствии задолженности)
+
+Для работы с сервисом ИОН-online требуется использовать браузер Internet Explorer версии не ниже 7.0. Также необходимо обеспечить доступ к следующим ресурсам:
+- ИОН-online Москва: https://213.24.62.114, порт 443
+- ИОН-online Московская область: http://213.24.62.98, порт 444
+
+Перед использованием сервиса необходимо настроить браузер Internet Explorer. В основном меню браузера выберите «Сервис»/«Свойства обозревателя», перейдите на вкладку «Безопасность», укажите зону «Надежные сайты», нажмите кнопку «Сайты». В окне «Надежные сайты» в строку «Добавить в зону следующий узел» добавьте адреса:
+- ИОН-online Москва: https://213.24.62.114
+- ИОН-online Московская область: http://213.24.62.98
+
+При подключении к сервису может быть предложено установить компонет шифрования CryptoTun.dll. Следует согласиться с установкой. Для того чтобы установка была возможна, требуется разрешить скачивание неподписанных элементов ActiveX. Для этого основном меню браузера выберите «Сервис»/«Свойства обозревателя», перейдите на вкладку «Безопасность», выберите зону «Надежные сайты», нажмите кнопку «Другой». Найдите раздел «Элементы ActiveX и модули подключения» и измените значения параметра «Скачивание неподписанных элементов ActiveX» на «Предлагать».</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПояснениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПояснениеРасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+</Form>

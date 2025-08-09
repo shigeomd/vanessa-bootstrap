@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Параметры подключения к Интернет-поддержке пользователей</v8:content>
+		</v8:item>
+	</Title>
+	<Width>96</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЛогинИПароль" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры авторизации в сервисе Интернет-поддержки</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЛогинИПарольExtendedTooltip" id="66"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛогинИПарольВертикально" id="45">
+					<Width>80</Width>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛогинИПарольВертикальноExtendedTooltip" id="67"/>
+					<ChildItems>
+						<Button name="Подключиться" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВвестиЛогинИПарольИлиЗарегистрироваться</CommandName>
+							<ExtendedTooltip name="ПодключитьсяExtendedTooltip" id="68"/>
+						</Button>
+						<UsualGroup name="ГруппаПолейЛогинаИПароля" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа полей логина и пароля</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа полей логина и пароля</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПолейЛогинаИПароляExtendedTooltip" id="69"/>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияПояснениеЛогинПароль" id="54">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При подключении Интернет-поддержки используется:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПояснениеЛогинПарольКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ДекорацияПояснениеЛогинПарольExtendedTooltip" id="70"/>
+						</LabelDecoration>
+						<LabelField name="Логин" id="37">
+							<DataPath>Логин</DataPath>
+							<Width>30</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ЛогинКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ЛогинExtendedTooltip" id="71"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияПояснениеПолучениеЛогинаПароля" id="51">
+					<Height>4</Height>
+					<TextColor>#455185</TextColor>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Для авторизации в системе Интернет-поддержки пользователей используется тот же логин и пароль, что и на сайте &lt;link open:UsersSite&gt;users.v8.1c.ru&lt;/&gt;. Если у Вас еще нет логина и пароля, то выполните регистрацию самостоятельно или обратитесь за помощью к партнеру фирмы «1С», с которым у Вас заключен договор ИТС.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<TitleHeight>4</TitleHeight>
+					<ContextMenu name="ДекорацияПояснениеПолучениеЛогинаПароляКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДекорацияПояснениеПолучениеЛогинаПароляExtendedTooltip" id="72"/>
+					<Events>
+						<Event name="URLProcessing">ДекорацияПояснениеПолучениеЛогинаПароляОбработкаНавигационнойСсылки</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтступИПараметрыСоединения" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отступ и параметры соединения</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтступИПараметрыСоединенияExtendedTooltip" id="73"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПараметрыСоединения" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры соединения</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПараметрыСоединенияExtendedTooltip" id="74"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПодключениеССервера" id="12">
+							<Group>Horizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодключениеССервераExtendedTooltip" id="75"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПереключателяСтороныПодключения" id="59">
+									<Width>43</Width>
+									<Height>4</Height>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПереключателяСтороныПодключенияExtendedTooltip" id="76"/>
+									<ChildItems>
+										<RadioButtonField name="ПодключениеССервера" id="1">
+											<DataPath>ПодключениеССервера</DataPath>
+											<TitleLocation>Left</TitleLocation>
+											<TitleHeight>2</TitleHeight>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>На локальном компьютере</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>На сервере 1С:Предприятия</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:decimal">1</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ПодключениеССервераКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="ПодключениеССервераExtendedTooltip" id="77"/>
+											<Events>
+												<Event name="OnChange">ПодключениеССервераПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="ДекорацияПояснениеПодключениеССервера" id="10">
+									<Height>4</Height>
+									<TextColor>#455185</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор компьютера, на котором организован доступ к сети Интернет. Если локальные компьютеры имеют доступ к Интернет, рекомендуется выбрать "На локальном компьютере". Если доступ к Интернет организован на сервере 1С:Предприятия, необходимо выбрать "На сервере 1С:Предприятия".</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<TitleHeight>4</TitleHeight>
+									<ContextMenu name="ДекорацияПояснениеПодключениеССервераКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДекорацияПояснениеПодключениеССервераExtendedTooltip" id="78"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТаймаут" id="5">
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТаймаутExtendedTooltip" id="79"/>
+							<ChildItems>
+								<UsualGroup name="ГорГруппаТаймаут" id="15">
+									<Width>43</Width>
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГорГруппаТаймаутExtendedTooltip" id="80"/>
+									<ChildItems>
+										<InputField name="ТаймаутПодключения" id="3">
+											<DataPath>ТаймаутПодключения</DataPath>
+											<SpinButton>true</SpinButton>
+											<ContextMenu name="ТаймаутПодключенияКонтекстноеМеню" id="4"/>
+											<ExtendedTooltip name="ТаймаутПодключенияExtendedTooltip" id="81"/>
+											<Events>
+												<Event name="OnChange">ТаймаутПодключенияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ДекорацияТаймаут" id="6">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>сек.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияТаймаутКонтекстноеМеню" id="7"/>
+											<ExtendedTooltip name="ДекорацияТаймаутExtendedTooltip" id="82"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="ДекорацияПояснениеТаймаут" id="16">
+									<Height>2</Height>
+									<TextColor>#455185</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Максимальное время в секундах, в течение которого необходимо ожидать соединение с сервером Интернет-поддержки пользователей.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<TitleHeight>2</TitleHeight>
+									<ContextMenu name="ДекорацияПояснениеТаймаутКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ДекорацияПояснениеТаймаутExtendedTooltip" id="83"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОбщегоПояснения" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекомендации по настройке соединения с сервером Интернет-поддержки</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаОбщегоПоясненияExtendedTooltip" id="84"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияРекомендации" id="22">
+					<Width>96</Width>
+					<Height>4</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<TextColor>#455185</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если на компьютере используется межсетевой экран (фаервол), рекомендуется добавить в список разрешенных адресов адрес сервера Интернет-поддержки пользователей: webits.1c.ru, порты 80 (HTTP) и 443 (HTTPS). Настройка исключений в каждом конкретном межсетевом экране или антивирусе выполняется согласно инструкции пользователя, поставляемой вместе с межсетевым экраном или антивирусом.
+При необходимости следует разрешить доступ к указанным адресу и сетевым портам на Интернет-шлюзе.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ДекорацияРекомендацииКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДекорацияРекомендацииExtendedTooltip" id="85"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияРекомендацииКС83" id="64">
+					<Width>96</Width>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<TextColor>#455185</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Если соединение с сервером Интернет-поддержки устанавливается на сервере 1С:Предприятия, тогда необходимо разрешить в профиле безопасности сервера 1С:Предприятия обращение к Интернет-ресурсу webits.1c.ru по протоколу безопасного соединения (HTTPS, порт 443).</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ДекорацияРекомендацииКС83КонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ДекорацияРекомендацииКС83ExtendedTooltip" id="86"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПодключениеССервера" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Устанавливать соединение с сервером Интернет-поддержки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаймаутПодключения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут соединения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Логин" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЛогинПустой" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин пустой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВвестиЛогинИПарольИлиЗарегистрироваться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить Интернет-поддержку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести логин и пароль или зарегистрироваться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВвестиЛогинПарольИлиЗарегистрироваться</Action>
+		</Command>
+	</Commands>
+</Form>

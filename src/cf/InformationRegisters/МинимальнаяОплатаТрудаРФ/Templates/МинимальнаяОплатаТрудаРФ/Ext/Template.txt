@@ -1,0 +1,16 @@
+﻿<Items Description="MinimumWageRate" Columns="Date,Rate">
+	<Item Date="20000101" Rate="132"/>
+	<Item Date="20010101" Rate="200"/>
+	<Item Date="20010701" Rate="300"/>
+	<Item Date="20020501" Rate="450"/>
+	<Item Date="20031001" Rate="600"/>
+	<Item Date="20050101" Rate="720"/>
+	<Item Date="20050901" Rate="800"/>
+	<Item Date="20060501" Rate="1100"/>
+	<Item Date="20070901" Rate="2300"/>
+	<Item Date="20090101" Rate="4330"/>
+	<Item Date="20110601" Rate="4611"/>
+	<Item Date="20130101" Rate="5205"/>
+	<Item Date="20140101" Rate="5554"/>
+	<Item Date="20150101" Rate="5965"/>
+</Items>

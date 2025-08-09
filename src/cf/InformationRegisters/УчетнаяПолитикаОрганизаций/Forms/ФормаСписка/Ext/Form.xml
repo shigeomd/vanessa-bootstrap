@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтборОрганизация" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор организация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отбор организация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборОрганизацияРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<LabelField name="ОтборОрганизация" id="36">
+					<DataPath>ОтборОрганизация</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<TextColor>style:ТекстПредопределенногоЗначения</TextColor>
+					<ContextMenu name="ОтборОрганизацияКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ОтборОрганизацияРасширеннаяПодсказка" id="38"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаБыстрыеОтборы" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="33"/>
+		</UsualGroup>
+		<CommandBar name="ГруппаКоманднаяПанель" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<CommandSource>Form</CommandSource>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="23"/>
+			<ChildItems>
+				<Popup name="ГруппаПечать" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Representation>PictureAndText</Representation>
+					<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Button name="ФормаПечатьПриказ" id="50">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьПриказ</CommandName>
+							<ExtendedTooltip name="ФормаПечатьПриказРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="ФормаПечатьУчетнаяПолитикаБУ" id="52">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьУчетнаяПолитикаБУ</CommandName>
+							<ExtendedTooltip name="ФормаПечатьУчетнаяПолитикаБУРасширеннаяПодсказка" id="53"/>
+						</Button>
+						<Button name="ФормаПечатьПланСчетов" id="54">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьПланСчетов</CommandName>
+							<ExtendedTooltip name="ФормаПечатьПланСчетовРасширеннаяПодсказка" id="55"/>
+						</Button>
+						<Button name="ФормаПечатьПервичныеДокументы" id="56">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьПервичныеДокументы</CommandName>
+							<ExtendedTooltip name="ФормаПечатьПервичныеДокументыРасширеннаяПодсказка" id="57"/>
+						</Button>
+						<Button name="ФормаПечатьРегистрыБУ" id="62">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьРегистрыБУ</CommandName>
+							<ExtendedTooltip name="ФормаПечатьРегистрыБУРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<Button name="ФормаПечатьУчетнаяПолитикаНУ" id="58">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьУчетнаяПолитикаНУ</CommandName>
+							<ExtendedTooltip name="ФормаПечатьУчетнаяПолитикаНУРасширеннаяПодсказка" id="59"/>
+						</Button>
+						<Button name="ФормаПечатьРегистрыНУ" id="60">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПечатьРегистрыНУ</CommandName>
+							<ExtendedTooltip name="ФормаПечатьРегистрыНУРасширеннаяПодсказка" id="61"/>
+						</Button>
+					</ChildItems>
+				</Popup>
+			</ChildItems>
+		</CommandBar>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>ГруппаБыстрыеОтборы</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="24"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="39">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="40"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="41"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="42">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="43"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="45">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="46"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="47"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+				<Event name="BeforeLoadUserSettingsAtServer">СписокПередЗагрузкойПользовательскихНастроекНаСервере</Event>
+				<Event name="AfterDeleteRow">СписокПослеУдаления</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="Организация" id="4">
+					<DataPath>Список.Организация</DataPath>
+					<Width>13</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="25"/>
+				</LabelField>
+				<LabelField name="Период" id="8">
+					<DataPath>Список.Period</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применяется с</v8:content>
+						</v8:item>
+					</Title>
+					<Width>14</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПериодExtendedTooltip" id="26"/>
+				</LabelField>
+				<LabelField name="ПериодПо" id="10">
+					<DataPath>Список.ПериодПо</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=D</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ПериодПоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПериодПоExtendedTooltip" id="27"/>
+				</LabelField>
+				<LabelField name="ПредставлениеСистемыНалогообложения" id="20">
+					<DataPath>Список.ПредставлениеСистемыНалогообложения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Система налогообложения</v8:content>
+						</v8:item>
+					</Title>
+					<Width>25</Width>
+					<ContextMenu name="ПредставлениеСистемыНалогообложенияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПредставлениеСистемыНалогообложенияExtendedTooltip" id="28"/>
+				</LabelField>
+				<CheckBoxField name="ПлательщикЕНВД" id="6">
+					<DataPath>Список.ПлательщикЕНВД</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЕНВД</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПлательщикЕНВДКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ПлательщикЕНВДExtendedTooltip" id="29"/>
+				</CheckBoxField>
+				<CheckBoxField name="ПрименяетсяУСНПатент" id="17">
+					<DataPath>Список.ПрименяетсяУСНПатент</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Патент</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Применяется патентная система</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПрименяетсяУСНПатентКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ПрименяетсяУСНПатентExtendedTooltip" id="30"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ИнформационныеСсылки" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные ссылки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформационныеСсылкиExtendedTooltip" id="31"/>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Организация</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Рег.Период,
+	Рег.Организация,
+	Рег.СистемаНалогообложения,
+	ВЫБОР
+		КОГДА Рег.ПрименяетсяОсобыйПорядокНалогообложения И НЕ Рег.ПрименяетсяУСНПатент И Рег.ПлательщикЕНВД
+			ТОГДА &amp;ПредставлениеЕНВД
+		КОГДА Рег.ПрименяетсяОсобыйПорядокНалогообложения И Рег.ПрименяетсяУСНПатент И НЕ Рег.ПлательщикЕНВД И Рег.Период &lt; &amp;ДатаНачалаДействияПатентнойСистемы
+			ТОГДА &amp;ПредставлениеУСНПатента
+		КОГДА Рег.ПрименяетсяОсобыйПорядокНалогообложения И Рег.ПрименяетсяУСНПатент И НЕ Рег.ПлательщикЕНВД И Рег.Период &gt;= &amp;ДатаНачалаДействияПатентнойСистемы
+			ТОГДА &amp;ПредставлениеПатентнойСистемы
+		ИНАЧЕ ПРЕДСТАВЛЕНИЕ(Рег.СистемаНалогообложения)
+	КОНЕЦ КАК ПредставлениеСистемыНалогообложения,
+	Рег.ПлательщикЕНВД,
+	Рег.ПрименяетсяУСНПатент,
+	ВЫБОР
+		КОГДА ВТ_СоответствиеПериодов.ПериодСледующий ЕСТЬ NULL 
+				И Рег.Период &lt;= &amp;КонецТекущегоГода
+			ТОГДА &amp;КонецТекущегоГода
+		КОГДА ВТ_СоответствиеПериодов.ПериодСледующий ЕСТЬ NULL 
+				И Рег.Период &gt; &amp;КонецТекущегоГода
+			ТОГДА КОНЕЦПЕРИОДА(Рег.Период, ГОД)
+		ИНАЧЕ ДОБАВИТЬКДАТЕ(НАЧАЛОПЕРИОДА(ВТ_СоответствиеПериодов.ПериодСледующий, ДЕНЬ), СЕКУНДА, -1)
+	КОНЕЦ КАК ПериодПо
+ИЗ
+	РегистрСведений.УчетнаяПолитикаОрганизаций КАК Рег
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			РегУПО1.Период КАК ПериодТекущий,
+			РегУПО1.Организация КАК Организация,
+			МИНИМУМ(РегУПО2.Период) КАК ПериодСледующий
+		ИЗ
+			РегистрСведений.УчетнаяПолитикаОрганизаций КАК РегУПО1
+				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.УчетнаяПолитикаОрганизаций КАК РегУПО2
+				ПО РегУПО1.Организация = РегУПО2.Организация
+					И РегУПО1.Период &lt; РегУПО2.Период
+		
+		СГРУППИРОВАТЬ ПО
+			РегУПО1.Период,
+			РегУПО1.Организация) КАК ВТ_СоответствиеПериодов
+		ПО Рег.Организация = ВТ_СоответствиеПериодов.Организация
+			И Рег.Период = ВТ_СоответствиеПериодов.ПериодТекущий</QueryText>
+				<MainTable>InformationRegister.УчетнаяПолитикаОрганизаций</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Организация</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОтборОрганизация" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПечатьПервичныеДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы первичных документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы первичных документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПервичныеДокументы</Action>
+		</Command>
+		<Command name="ПечатьПланСчетов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочий план счетов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочий план счетов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПланСчетов</Action>
+		</Command>
+		<Command name="ПечатьПриказ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приказ об учетной политике</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приказ об учетной политике</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПриказ</Action>
+		</Command>
+		<Command name="ПечатьУчетнаяПолитикаБУ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная политика по бухгалтерскому учету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная политика по бухгалтерскому учету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьУчетнаяПолитикаБУ</Action>
+		</Command>
+		<Command name="ПечатьУчетнаяПолитикаНУ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная политика по налоговому учету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная политика по налоговому учету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьУчетнаяПолитикаНУ</Action>
+		</Command>
+		<Command name="ПечатьРегистрыНУ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистры налогового учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистры налогового учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьРегистрыНУ</Action>
+		</Command>
+		<Command name="ПечатьРегистрыБУ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистры бухгалтерского учета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистры бухгалтерского учета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьРегистрыБУ</Action>
+		</Command>
+	</Commands>
+</Form>
